@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+  /* height: 200vh; */
+}
+
+header {
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+header img {
+  height: 4.5rem;
+  margin-right: auto;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  padding-right: 2rem;
+}
+
+header li {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+header li:hover {
+  cursor: pointer;
+  color: #ef7038;
+}
+
+header li.active {
+  background-color: #ef7038;
+  border-radius: 1rem;
+}
+#content {
+  width: 50%;
+  margin-top: 10rem;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bg-image {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+h1 {
+  font-family: "Prata", serif;
+  font-size: 3rem;
+  color: rgb(83, 96, 1);
+  margin-bottom: 2rem;
+}
+
+p {
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+  gap: 1rem;
+}
+
+.meal-card {
+  width: 300px;
+  height: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 1px 5px -1px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.meal-image {
+  object-fit: contain;
+  width: 100%;
+  grid-column: 1 /-1;
+}
+
+.meal-title {
+  padding: 0 1rem;
+  grid-column: 1/-1;
+}
+
+.meal-description {
+  font-size: 0.75rem;
+  color: darkgray;
+  padding: 0 1rem;
+  line-height: 1rem;
+  grid-column: 1/-1;
+  border-bottom: 1px solid darkgray;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  align-self: stretch;
+  padding: 0 1rem;
+  border-right: 1px solid darkgray;
+}
+
+.order-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.order-text {
+  font-size: 0.85rem;
+}
+
+.price {
+  font-weight: 500;
+  align-self: center;
+  justify-self: center;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 90vw;
+}
+
+.about-image {
+  width: 50%;
+  height: auto;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.about-btn {
+  padding: 1rem 2rem;
+  width: max-content;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
